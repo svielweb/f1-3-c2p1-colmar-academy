@@ -1,0 +1,431 @@
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Encode Sans', sans-serif;
+}
+
+header{
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 64px;
+  width: 100%;
+}
+
+.icon{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav{
+  display: flex;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: right;
+}
+
+nav ul li{
+  display: inline;
+}
+
+header .icon h1{
+  color: #000000;
+  display: inline;
+}
+
+.icon a{
+  color: grey;
+}
+.small{
+  display: inline;
+}
+
+@media only screen and (min-width: 480px){
+  .small{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .large{
+    display: none;
+  }
+  .large h1{
+    display: none;
+    visibility: none;
+  }
+}
+
+/* Block 1 */
+.Learn{
+  background-color: lightgrey;
+  display: flex;
+  padding: 32px 24px;
+}
+
+.largepic{
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+.largepic img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#new{
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.start{
+  background-color: darkgrey;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#new .start p{
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 480px){
+  .Learn{
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .largepic{
+    width: 100%;
+  }
+
+  #new{
+    padding: 32px 16px;
+  }
+
+  .start{
+    margin-top: 24px;
+  }
+}
+
+/* Block 2 */
+.Info{
+  display: flex;
+  margin-top: 32px;
+  margin-left: 24px;
+  margin-bottom: 32px;
+  height: auto;
+  justify-content: space-between;
+  flex-flow: row;
+}
+
+.section1{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  padding-right: 24px;
+}
+
+.Info .section1 .infoLargepic{
+  padding-bottom: 32px;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.infoLargepic{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text2{
+  padding-right: 24px;
+  width: auto;
+}
+.text2 h1, .text2 p{
+  text-align: left;
+}
+
+.section2{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+
+.infoItem{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 0px 16px 16px 16px;
+}
+
+#explore2{
+  padding: 16px 16px 16px 16px;
+}
+
+.smallpic{
+  height: auto;
+  width: 35%;
+  display: inline-block;
+  overflow: hidden;
+  padding-right: 16px;
+}
+.smallpic img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#guest{
+  padding: 16px 16px 16px 16px;
+  background-color: lightgrey;
+}
+#guest img{
+  margin-right: 16px;
+}
+
+.Info a{
+  color: blue;
+}
+
+@media only screen and (max-width: 480px){
+  .Info{
+    justify-content: center;
+    margin: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .section1{
+    display: none;
+    width: 0%;
+    padding: 0px;
+  }
+  .infoLargepic{
+    display: none;
+    width: 0%;
+  }
+  .section1 .text2{
+    display: none;
+  }
+  .section2{
+    width: 100%;
+  }
+  .infoItem{
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+  .smallpic{
+    width: 100%;
+  }
+  .text3{
+    width: 100%;
+    padding-left: 16px;
+  }
+  #explore1, #explore2, #guest{
+    width: 100%;
+  }
+  #explore2{
+    padding-left: 0px;
+  }
+  #guest{
+    padding: 0px;
+  }
+}
+.testing{
+  background-color: black;
+  height: 10px;
+  width: 100%;
+}
+
+/* Block 3 */
+.Courses{
+  padding: 32px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  background-color: lightgrey;
+}
+
+.Courses h2{
+}
+
+#learning{
+  text-align: center;
+}
+
+.gallery{
+    display: flex;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    margin:16px;
+    background-color: white;
+    height: auto;
+}
+
+.smallpic2{
+    height: auto;
+}
+.cinfo{
+    padding-top: 8px;
+    padding-left: 16px;
+}
+
+.cinfo h1{
+    text-align: left;
+}
+
+.cinfo p{
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 480px){
+  .Courses{
+    background-color: white;
+    padding: 32px 16px;
+  }
+  .gallery{
+    margin: 0px;
+  }
+  .smallpic2{
+    display: none;
+  }
+  .course{
+    display: block;
+    background-color: lightgrey;
+    width: 100%;
+    margin: 8px;
+    padding: 16px 0px 24px 16px;
+  }
+  .cinfo{
+    padding: 0px;
+  }
+  .cinfo h2, .cinfo p{
+    display: none;
+  }
+
+}
+
+/*Block 4 Styling  */
+
+.Thesis{
+  padding: 32px 0px 32px 24px;
+  height: auto;
+  width: 100%;
+}
+
+.Thesis h1{
+  text-align: center;
+}
+
+.thesisContent{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.thesisVideo{
+  height: auto;
+  width: 60%;
+  padding-right: 24px;
+}
+
+.thesisVideo video{
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.thesisGallery{
+  width: 40%;
+  height: auto;
+}
+
+.thesisItems{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  max-width: 100%;
+}
+
+.thesisImg{
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.thesisImg img{
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.thesisText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#Fisma{
+  background-color: lightgrey;
+}
+
+@media only screen and (max-width: 480px){
+  .large{
+    display: none;
+  }
+  .thesisVideo{
+    width: 100%;
+  }
+  .thesisGallery{
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 0px 24px;
+}
+
+footer ul{
+  list-style-type: none;
+  text-align: right;
+}
+
+footer ul li{
+  display: inline;
+}
+
+@media only screen and (max-width: 480px){
+  footer ul{
+    display: none;
+  }
+}
